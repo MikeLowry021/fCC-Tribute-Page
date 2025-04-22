@@ -1,0 +1,233 @@
+/* Basic Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Added Google Font 'Poppins' with fallbacks */
+    font-family: 'Poppins', sans-serif; 
+    line-height: 1.7; /* Slightly increased line height */
+    color: #333; /* Primary text color (Dark Grey/Black) */
+    background-color: #f8f9fa; /* Lighter grey background */
+    margin: 0; 
+}
+
+/* Main Content Container */
+#main {
+    max-width: 1000px; /* Slightly wider max-width */
+    margin: 40px auto; /* Increased top/bottom margin */
+    padding: 30px 40px; /* Increased padding */
+    background-color: #ffffff; /* White background for content */
+    border-radius: 10px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    border-top: 5px solid #007749; /* Green border top (SA Flag) */
+}
+
+/* Header and Title */
+header {
+    text-align: center;
+    margin-bottom: 40px; /* Increased spacing */
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee; 
+}
+
+#title {
+    font-size: 3em; /* Larger title */
+    margin-bottom: 0.3em;
+    color: #000000; /* Black title (SA Flag) */
+    font-weight: 700; /* Bolder title */
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555; /* Darker grey subtitle */
+    font-weight: 400;
+}
+
+/* Image Section */
+#img-div {
+    margin: 0 auto 30px auto; /* Increased bottom margin */
+    padding: 20px; /* Increased padding */
+    background-color: #e9ecef; /* Light background for image area */
+    border-radius: 8px; /* Consistent rounded corners */
+    text-align: center; 
+}
+
+#image {
+    max-width: 100%; 
+    height: auto;     
+    display: block;   
+    margin: 0 auto 15px auto; /* Added bottom margin to image */
+    border-radius: 8px; /* Rounded corners for image */
+    border: 1px solid #dee2e6; /* Subtle border */
+}
+
+#img-caption {
+    margin-top: 15px; /* Increased spacing */
+    font-size: 0.95em; /* Slightly larger caption */
+    color: #495057; /* Slightly darker caption text */
+    line-height: 1.5;
+}
+
+/* Tribute Information Section */
+#tribute-info {
+    margin-top: 40px; /* Increased spacing */
+    padding: 0 10px; 
+}
+
+#tribute-info h2, 
+#tribute-info h3 {
+    /* Gold/Yellow color for headings (SA Flag) */
+    color: #FFB81C; 
+    margin-top: 30px; /* Increased spacing above headings */
+    margin-bottom: 15px; /* Increased spacing below headings */
+    padding-bottom: 8px; /* Increased padding below */
+    font-weight: 600; /* Medium-bold headings */
+    /* Use a subtle text shadow for depth */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); 
+}
+
+#tribute-info h2 {
+    text-align: center;
+    font-size: 2em; /* Adjusted size */
+    border-bottom: 2px solid #FFB81C; /* Gold underline */
+}
+
+#tribute-info h3 {
+    font-size: 1.6em; /* Adjusted size */
+    border-bottom: 1px solid #e0e0e0; /* Lighter underline */
+}
+
+#tribute-info p {
+    margin-bottom: 20px; /* Increased paragraph spacing */
+    text-align: justify; 
+}
+
+#tribute-info ul {
+    list-style-position: outside;
+    margin-left: 25px; 
+    margin-bottom: 25px; /* Increased spacing */
+}
+
+#tribute-info li {
+    margin-bottom: 12px; /* Increased spacing between list items */
+    padding-left: 10px; /* Add padding for better alignment */
+}
+
+/* Blockquote Styling */
+blockquote {
+    margin: 35px 0; /* Increased vertical margin */
+    padding: 20px 25px; /* Increased padding */
+    /* Blue border left (SA Flag) */
+    border-left: 5px solid #001489; 
+    background-color: #f1f3f5; /* Slightly different background */
+    font-style: italic;
+    color: #212529; /* Darker text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+blockquote p {
+    margin-bottom: 10px; /* Spacing below quote text */
+    text-align: left;
+    font-size: 1.1em; /* Slightly larger quote text */
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+    font-style: normal;
+    font-weight: 600; /* Bolder cite */
+    font-size: 1em;
+    color: #001489; /* Match border color */
+}
+
+/* Footer and Tribute Link */
+footer {
+    text-align: center;
+    margin-top: 50px; /* Increased spacing */
+    padding-top: 25px; /* Increased spacing */
+    border-top: 1px solid #dee2e6; /* Slightly darker border */
+    font-size: 0.95em;
+}
+
+#tribute-link {
+    /* Red color for link (SA Flag) */
+    color: #DE3831; 
+    text-decoration: none;
+    font-weight: 600; /* Bolder link */
+    padding: 2px 4px; /* Add slight padding */
+    border-radius: 3px; /* Rounded corners on hover */
+    transition: background-color 0.2s ease, color 0.2s ease; /* Smooth transition */
+}
+
+#tribute-link:hover,
+#tribute-link:focus { /* Added focus state for accessibility */
+    text-decoration: none;
+    background-color: #DE3831; /* Red background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    #main {
+        margin: 30px 20px; 
+        padding: 25px;
+    }
+
+    #title {
+        font-size: 2.4em;
+    }
+
+    #tribute-info h2 {
+        font-size: 1.8em;
+    }
+    
+    #tribute-info h3 {
+        font-size: 1.5em;
+    }
+
+    #tribute-info p,
+    #tribute-info li {
+        text-align: left; 
+    }
+
+    blockquote {
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px; /* Ensure readability on small screens */
+        line-height: 1.6;
+    }
+    
+    #main {
+        margin: 15px 10px; 
+        padding: 20px 15px;
+        border-radius: 5px; 
+        border-top-width: 4px; /* Slightly thinner top border */
+    }
+
+    #title {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+     #tribute-info h2 {
+        font-size: 1.6em;
+    }
+    
+    #tribute-info h3 {
+        font-size: 1.4em;
+    }
+
+    blockquote p {
+        font-size: 1em;
+    }
+}
